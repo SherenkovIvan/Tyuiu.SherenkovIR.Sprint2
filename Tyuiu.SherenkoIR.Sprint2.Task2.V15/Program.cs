@@ -1,4 +1,4 @@
-﻿using Tyuiu.SherenkoIR.Sprint2.Task2.V15.Lib;
+﻿using Tyuiu.SherenkovIR.Sprint2.Task2.V15.Lib;
 DataService ds = new DataService();
 Console.Title = "Спринт #2| Выполнил: Шеренков И. Р. | ИБКСБ-25-1";
 // Длинна строки 75 символов

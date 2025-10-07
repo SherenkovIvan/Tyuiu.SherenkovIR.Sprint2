@@ -1,5 +1,5 @@
-﻿using Tyuiu.SherenkoIR.Sprint2.Task2.V15.Lib;
-namespace Tyuiu.SherenkoIR.Sprint2.Task2.V15.Test
+﻿using Tyuiu.SherenkovIR.Sprint2.Task2.V15.Lib;
+namespace Tyuiu.SherenkovIR.Sprint2.Task2.V15.Test
 {
     [TestClass]
     public sealed class DataServiceTest
