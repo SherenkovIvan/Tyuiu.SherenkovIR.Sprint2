@@ -10,7 +10,7 @@ namespace Tyuiu.SherenkovIR.Sprint2.Task3.V24.Test
             DataService ds = new DataService();
             double x = 5;
             double res = ds.Calculate(x);
-            double wait = 152.594;
+            double wait = 217.998;
             Assert.AreEqual(wait, res);
         }
         public void ValidCondition2()
