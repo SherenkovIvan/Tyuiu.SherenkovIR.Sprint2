@@ -8,7 +8,7 @@ namespace Tyuiu.SherenkovIR.Sprint2.Task3.V24.Lib
             double y = 0;
             if ( x > 0)
             {
-                y = ((10 + Math.Sin(Math.Sqrt(x) + 1)) / x) + 1;
+                y = Math.Pow((10 + Math.Sin(Math.Sqrt(x) + 1)) / x, x);
             }
             else
             {
