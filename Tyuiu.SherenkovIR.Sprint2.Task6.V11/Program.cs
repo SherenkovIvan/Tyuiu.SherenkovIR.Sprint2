@@ -18,14 +18,14 @@ Console.WriteLine("****************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                 *");
 Console.WriteLine("****************************************************");
 
-Console.WriteLine("Введите год: ");
-int year = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите день: ");
+int day = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите месяц: ");
 int month = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите день: ");
-int day = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите год: ");
+int year = Convert.ToInt32(Console.ReadLine());
 
 string res;
 if ((year < 1) || (month < 1 || month > 12) || (day < 1 || day > 31))

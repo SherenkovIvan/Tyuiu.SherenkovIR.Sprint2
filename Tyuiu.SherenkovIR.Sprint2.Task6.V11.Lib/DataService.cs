@@ -7,20 +7,30 @@ namespace Tyuiu.SherenkovIR.Sprint2.Task6.V11.Lib
         {
             if (g < 1) throw new ArgumentException("Год не может быть отрицательным");
             if (m < 1 || m > 12) throw new ArgumentException("Месяц должен быть от 1 до 12");
-            if (n < 1 || n > 31) throw new ArgumentException("День должен быть от 1 до 31");
+
+            
+            int maxDaysInCurrentMonth = m switch
+            {
+                2 => 28, 
+                4 or 6 or 9 or 11 => 30,
+                _ => 31
+            };
+
+            if (n < 1 || n > maxDaysInCurrentMonth)
+                throw new ArgumentException($"День должен быть от 1 до {maxDaysInCurrentMonth} для месяца {m}");
 
             int year = g;
             int month = m;
             int day = n + 1;
 
-            int maxDays = month switch
+            int maxDaysInNextMonth = month switch
             {
                 2 => 28,
                 4 or 6 or 9 or 11 => 30,
                 _ => 31
             };
 
-            if (day > maxDays)
+            if (day > maxDaysInNextMonth)
             {
                 day = 1;
                 month++;
@@ -31,7 +41,7 @@ namespace Tyuiu.SherenkovIR.Sprint2.Task6.V11.Lib
                 }
             }
 
-            return $"{year}-{month}-{day}";
+            return $"{day:00}-{month:00}-{year}";
         }
     }
 }
