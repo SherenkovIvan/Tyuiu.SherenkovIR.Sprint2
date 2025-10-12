@@ -41,7 +41,7 @@ namespace Tyuiu.SherenkovIR.Sprint2.Task6.V11.Lib
                 }
             }
 
-            return $"{day:00}-{month:00}-{year}";
+            return $"{day:00}.{month:00}.{year}";
         }
     }
 }
